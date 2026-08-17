@@ -34,13 +34,13 @@ h1 em,h2 em{font-style:normal;color:var(--gold)}
 .hero-copy p{max-width:620px;color:#b5b0a7;font-size:18px;line-height:1.75;margin-bottom:31px}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
 .hero-photo{position:relative;z-index:2}
-.hero-photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;border-radius:22px;border:1px solid rgba(231,181,43,.25);box-shadow:0 35px 80px rgba(0,0,0,.7)}
+.hero-photo img{width:100%;max-width:430px;margin:auto;display:block;aspect-ratio:4/5;object-fit:contain;background:#090909;border-radius:22px;border:1px solid rgba(231,181,43,.25);box-shadow:0 35px 80px rgba(0,0,0,.7)}
 .photo-label{position:absolute;left:-22px;bottom:24px;background:rgba(8,8,8,.94);border:1px solid var(--gold);border-radius:12px;padding:14px 18px;box-shadow:0 15px 35px rgba(0,0,0,.45)}
 .photo-label strong{display:block;color:var(--gold);font:700 18px Georgia,serif}
 .photo-label small{color:#aaa;font-size:10px;letter-spacing:1px}
 .offer{padding:8px 22px 65px}
 .offer-frame{overflow:hidden;border-radius:20px;border:1px solid rgba(231,181,43,.22);background:#111;box-shadow:0 20px 60px rgba(0,0,0,.4)}
-.offer-frame img{display:block;width:100%}
+.offer-frame img{display:block;width:100%;max-height:380px;object-fit:contain;background:#090909}
 .section{padding:85px 22px}
 .section-top{max-width:720px;margin-bottom:42px}
 .section h2{font-size:clamp(39px,5.3vw,61px);line-height:1.02;letter-spacing:-1px;margin:8px 0 17px}
@@ -58,7 +58,7 @@ h1 em,h2 em{font-style:normal;color:var(--gold)}
 .feature h3{font:700 17px Arial,sans-serif;margin-bottom:6px}
 .feature p{font-size:12px;color:#858585}
 .showcase{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
-.showcase-img img{width:100%;display:block;border-radius:20px;border:1px solid rgba(231,181,43,.25);box-shadow:0 25px 70px rgba(0,0,0,.55)}
+.showcase-img img{width:100%;max-width:420px;margin:auto;display:block;border-radius:20px;border:1px solid rgba(231,181,43,.25);box-shadow:0 25px 70px rgba(0,0,0,.55)}
 .showcase-copy h2{margin-top:7px}
 .list{list-style:none;margin:26px 0 30px}
 .list li{color:#c2beb6;margin:13px 0}
@@ -70,13 +70,13 @@ h1 em,h2 em{font-style:normal;color:var(--gold)}
 footer{border-top:1px solid #222;text-align:center;padding:38px 20px;color:#737373}
 .footer-logo{font:900 22px Georgia,serif;letter-spacing:3px;color:var(--gold);margin-bottom:8px}
 footer small{font-size:11px}
-.marketplaces .meesho{border-color:rgba(231,181,43,.35)}.float-buy{position:fixed;right:19px;bottom:19px;z-index:80;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#080808;font-size:24px;box-shadow:0 10px 35px rgba(0,0,0,.55);transition:.25s}
+.marketplaces .meesho{border-color:rgba(231,181,43,.35)}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,420px));justify-content:center;gap:18px}.gallery-grid>div{background:#101010;border:1px solid #292929;border-radius:18px;overflow:hidden}.gallery-grid img{width:100%;height:300px;object-fit:contain;display:block;background:#090909;padding:12px}.float-buy{position:fixed;right:19px;bottom:19px;z-index:80;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#080808;font-size:24px;box-shadow:0 10px 35px rgba(0,0,0,.55);transition:.25s}
 .float-buy:hover{transform:scale(1.08)}
 @media(max-width:900px){
-.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:60px}.hero-photo{max-width:620px;margin:auto}.products{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.showcase{grid-template-columns:1fr}
+.navlinks{display:none}.gallery-grid{grid-template-columns:1fr}.hero{grid-template-columns:1fr;padding-top:60px}.hero-photo{max-width:620px;margin:auto}.products{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.showcase{grid-template-columns:1fr}
 }
 @media(max-width:600px){
-nav{padding:13px 16px}.logo{font-size:24px}.logo span{font-size:8px}.navlinks{display:none}.hero{padding:52px 18px 45px;gap:38px}.hero h1{font-size:46px}.hero-copy p{font-size:16px}.actions{flex-direction:column}.actions .btn{width:100%}.photo-label{left:12px;bottom:12px}.offer{padding:8px 18px 45px}.section{padding:58px 18px}.features{grid-template-columns:1fr 1fr}.feature{padding:22px 10px}.showcase{gap:38px}.order-box{margin:5px 18px 55px;padding:55px 18px}.float-buy{width:54px;height:54px;right:15px;bottom:15px}
+nav{padding:13px 16px}.logo{font-size:24px}.logo span{font-size:8px}.navlinks{display:none}.hero{padding:52px 18px 45px;gap:38px}.hero h1{font-size:46px}.hero-copy p{font-size:16px}.actions{flex-direction:column}.actions .btn{width:100%}.photo-label{left:12px;bottom:12px}.offer{padding:8px 18px 45px}.section{padding:58px 18px}.features{grid-template-columns:1fr 1fr}.feature{padding:22px 10px}.gallery-grid{grid-template-columns:1fr}.gallery-grid img{height:250px}.showcase{gap:38px}.order-box{margin:5px 18px 55px;padding:55px 18px}.float-buy{width:54px;height:54px;right:15px;bottom:15px}
 }
 </style>
 </head>
@@ -107,14 +107,30 @@ nav{padding:13px 16px}.logo{font-size:24px}.logo span{font-size:8px}.navlinks{di
 </div>
 </div>
 <div class="hero-photo">
-<img src="taj-fish-fry-masala.jpeg" alt="TAJ Signature Fish Fry Masala">
+<img src="taj-fish-fry-masala.jpg" alt="TAJ Signature Fish Fry Masala">
 <div class="photo-label"><strong>TAJ Signature</strong><small>AUTHENTIC INDIAN SPICE BLEND</small></div>
 </div>
 </section>
 
 <section class="offer">
 <div class="offer-frame">
-<img src="taj-1-plus-1-offer.jpeg" alt="TAJ Signature 1 Plus 1 Offer">
+<img src="Image.png" alt="TAJ Signature 1 Plus 1 Offer">
+</div>
+</section>
+
+<section class="section" id="gallery">
+<div class="section-top">
+<div class="kicker">TAJ SIGNATURE</div>
+<h2>See the <em>Signature.</em></h2>
+<p>Explore our product and promotional images before you shop.</p>
+</div>
+<div class="gallery-grid">
+<div style="background:#101010;border:1px solid #292929;border-radius:18px;overflow:hidden">
+<img src="taj-fish-fry-masala.jpg" alt="TAJ Signature Fish Fry Masala" style="width:100%;display:block">
+</div>
+<div style="background:#101010;border:1px solid #292929;border-radius:18px;overflow:hidden">
+<img src="Image.png" alt="TAJ Signature Offer" style="width:100%;display:block">
+</div>
 </div>
 </section>
 
@@ -147,7 +163,7 @@ nav{padding:13px 16px}.logo{font-size:24px}.logo span{font-size:8px}.navlinks{di
 
 <section class="section">
 <div class="showcase">
-<div class="showcase-img"><img src="taj-fish-fry-masala.jpeg" alt="TAJ Signature Masala Pack"></div>
+<div class="showcase-img"><img src="taj-fish-fry-masala.jpg" alt="TAJ Signature Masala Pack"></div>
 <div class="showcase-copy">
 <div class="kicker">THE TAJ SIGNATURE EXPERIENCE</div>
 <h2>From your kitchen to the table, <em>make it special.</em></h2>
